@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <header>
+        <h1>Welcome to the Complaint App</h1>
+        <h2>Dougie the Donut & Pizza Rat</h2>
+    </header>
+</head>
+<body>
+    <form>
+        <input type="submit" value="Get Manhattan Data" id="btnManhattan" />
+        <input type="submit" value="Get Brooklyn Data" id="btnBrooklyn" />
+        <input type="submit" value="Get Queens Data" id="btnQueens" />
+        <input type="submit" value="Get Staten Island Data" id="btnSI" />
+        <input type="submit" value="Get Bronx Data" id="btnBronx" />
+        <br>
+        <br>
+        <input type="text" placeholder="# complaints to show" id="numComplaintsTxtBox" />
+        <br>
+    </form>
+    <script src="app.js"></script>
+    <div class="mainComplaintDiv">
+        <dl>
+            <dt>Descriptor</dt>
+            <dd id="descriptor"></dd>
+            
+    
+            <dt>Resolution</dt>
+            <dd id="resolutionInfo"></dd>
+            <br>
+        </dl>
+    </div>
+</body>
+</html>
